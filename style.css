@@ -10,3 +10,43 @@ body {
   font-family: Inconsolata;
   overflow-x: hidden;
 }
+
+input[type="checkbox"] {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100000;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100001;
+  background: #000;
+  pointer-events: none;
+}
+
+.hamburger:before {
+  content: 'close';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ .hamburger:before {
+  content: 'menu';
+}
