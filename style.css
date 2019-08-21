@@ -89,3 +89,21 @@ ul li a:hover {
   transform: translateX(10px);
   color: #ff0;
 }
+
+section {
+  position: relative;
+  left: 300px;
+  padding: 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ section {
+  left: 0;
+}
+
+section h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
