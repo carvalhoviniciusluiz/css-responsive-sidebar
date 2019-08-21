@@ -11,6 +11,12 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 input[type="checkbox"] {
   position: fixed;
   right: 20px;
