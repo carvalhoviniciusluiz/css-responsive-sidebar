@@ -119,3 +119,31 @@ section h2 {
     padding: 50px;
   }
 }
+
+@media (max-width: 767px) {
+  ul {
+    width: 100%;
+    left: 0;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    left: -100%;
+  }
+
+  input[type="checkbox"] {
+    z-index: 100001;
+    outline: none;
+    top: 0;
+    right: 0;
+  }
+
+  input[type="checkbox"] ~ .hamburger {
+    top: 0;
+    right: 0;
+    background: #f00;
+    transition: 0.5s;
+  }
+  input[type="checkout"]:checked ~ .hamburger {
+    background: #000;
+  }
+}
